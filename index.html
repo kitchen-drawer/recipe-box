@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Box</title>
     <style>
+        /* Light Theme (Default) */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
             line-height: 1.6;
@@ -55,6 +56,32 @@
         a:hover {
             color: #2980b9;
         }
+
+        /* Dark Theme Styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a; /* Darker background */
+                color: #e0e0e0; /* Lighter text */
+            }
+
+            .container {
+                background-color: #282c34; /* Slightly lighter than body background */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow for dark mode */
+            }
+
+            h1 {
+                color: #e0e0e0; /* Lighter heading text */
+                border-bottom-color: #444; /* Lighter border for heading */
+            }
+
+            a {
+                color: #87ceeb; /* A nice light blue for links */
+            }
+
+            a:hover {
+                color: #61dafb; /* Slightly brighter on hover */
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,7 +89,7 @@
         <h1>Recipe Box</h1>
         <ul>
             <li><a href="crabroepasta.html">Crab and Fish Roe Pasta</a></li>
-            <li><a href="fishbrocrabe.html">Fish with Broc Rabe Sauce</a></li>
+            <li><a href="fishbrocrabe.html">Fish with a Broc Rrabe Sauce</a></li>
             <li><a href="hawksworththaifishcurry.html">Hawksworth Thai Fish Curry</a></li>
             <li><a href="mischiato-potente.html">Mischiato Potente</a></li>
             <li><a href="sardineputtanesca.html">Sardine Puttanesca</a></li>
