@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faux Gras Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5C4033; /* Dark earthy brown */
+            --secondary-color: #A38C7D; /* Lighter brown/taupe */
+            --accent-color: #E0C2A7; /* Muted cream */
+            --text-color: #333;
+            --light-text-color: #666;
+            --background-color: #FDF9F6;
+            --border-color: #D3C4B4;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: var(--secondary-color);
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            margin-top: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 25px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.7em;
+            line-height: 1.5;
+        }
+
+        /* Ensure nested lists within an ordered list item display as bullets */
+        ol li > div > ul {
+            list-style-type: disc;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            padding-left: 20px;
+        }
+
+        ol li > div > ul li {
+            margin-bottom: 0.3em;
+        }
+
+        .recipe-meta {
+            text-align: center;
+            font-style: italic;
+            color: var(--light-text-color);
+            margin-bottom: 25px;
+        }
+
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+            margin-left: 20px; /* Indent slightly for readability */
+        }
+
+        .ingredients-list li {
+            margin-bottom: 0.5em;
+            position: relative;
+            padding-left: 1.5em;
+        }
+
+        .ingredients-list li::before {
+            content: '•';
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .shopping-list h3 {
+            margin-top: 40px;
+        }
+
+        .shopping-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .shopping-list ul li {
+            margin-bottom: 0.8em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .shopping-list ul li ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 0.3em;
+            font-weight: normal;
+            color: var(--text-color);
+        }
+
+        .shopping-list ul li ul li {
+            margin-bottom: 0.2em;
+        }
+
+        .note, .tip {
+            background-color: var(--accent-color);
+            padding: 10px 15px;
+            border-left: 4px solid var(--secondary-color);
+            margin: 15px 0;
+            border-radius: 4px;
+            font-style: italic;
+            color: var(--text-color);
+        }
+
+        .note strong, .tip strong {
+            color: var(--primary-color);
+        }
+
+        .citation {
+            font-size: 0.8em;
+            color: var(--light-text-color);
+            vertical-align: super;
+            margin-left: 2px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Faux Gras</h1>
+        <p>This recipe yields a plant-based "faux gras" that captures the essence of traditional foie gras, offering a smooth, buttery texture and a complex, savory-sweet flavor profile. It's designed to be a luxurious spread, perfect for serving with crusty bread and a touch of jam.</p>
+
+        <div class="recipe-meta">
+            <p><strong>Yields:</strong> Approximately 2 cups</p>
+            <p><strong>Prep time:</strong> 12-14 hours (including cashew soaking time)</p>
+            <p><strong>Cook time:</strong> 20-30 minutes</p>
+            <p><strong>Chill time:</strong> 2-4 hours</p>
+        </div>
+
+        <h2>Ingredients:</h2>
+        <ul class="ingredients-list">
+            <li>1 cup (about 150g) raw cashews</li>
+            <li>2 tablespoons refined coconut oil, plus more for sweating vegetables</li>
+            <li>1/2 cup (about 60g) shallots, diced</li>
+            <li>1/2 cup (about 60g) cremini mushrooms, diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1/4 cup (60ml) brandy or cognac</li>
+            <li>1/2 cup (120ml) water</li>
+            <li>1 tablespoon white miso paste</li>
+            <li>1 tablespoon tomato paste</li>
+            <li>1 teaspoon salt, or to taste</li>
+            <li>1/2 teaspoon freshly ground black pepper, or to taste</li>
+            <li>1/4 teaspoon ground star anise</li>
+            <li>1/4 teaspoon vanilla extract</li>
+            <li>1/4 teaspoon orange zest</li>
+            <li>1/4 teaspoon gellan gum (specifically, a blend of gellan gum F and gellan gum LT100, if available)</li>
+            <li>2 tablespoons coconut oil and red palm oil shortening (optional, for fat cap)</li>
+        </ul>
+
+        <h3>Equipment:</h3>
+        <ul class="ingredients-list">
+            <li>Small saucepan</li>
+            <li>High-speed blender</li>
+            <li>Jars or molds for casting (e.g., 4-ounce canning jars)</li>
+        </ul>
+
+        <h2>Instructions:</h2>
+        <ol>
+            <li>
+                <div>
+                    <h3>Soak the Cashews (12-24 hours in advance):</h3>
+                    <p>First things first, you'll want to get your cashews soaking. Place the raw cashews in a bowl and cover them with at least an inch of cold water. Let them soak overnight, or for a minimum of 12 hours, and up to 24 hours. This step is absolutely crucial for achieving that silky, buttery texture we're after when we blend them. When they're ready, drain and rinse them thoroughly.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Mise en Place and Prepare for Speed:</h3>
+                    <p>This recipe moves quickly once you start cooking the mixture, as the gellan gum sets very fast. So, before you even think about turning on the heat, gather all your ingredients and have them measured and ready. Have your high-speed blender within arm's reach, and your casting jars or molds lined up and ready to receive the faux gras. Think of it like a culinary race against the clock, but one you're perfectly prepared for!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Sweat the Aromatics (5-7 minutes):</h3>
+                    <p>In a small saucepan, melt a tablespoon or so of refined coconut oil over medium-low heat. Add your diced shallots, mushrooms, and minced garlic. Now, this is important: we're not looking for any color here, just a gentle "sweat." Cook them, stirring occasionally, until they're softened and translucent, releasing their aromatic goodness without any browning. If you hear any sizzling or hissing, your heat is too high; lower it immediately. We want to coax out their flavors, not caramelize them.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Deglaze with Brandy (2-3 minutes):</h3>
+                    <p>Once your aromatics are beautifully softened, pour in the brandy or cognac. Increase the heat to medium and let it simmer, scraping up any delicious bits from the bottom of the pan. You're aiming to reduce the brandy by about half, concentrating its rich, complex notes. You'll notice the alcohol scent dissipating, leaving behind a more mellow, fruity aroma.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Combine and Bring to a Boil (5-7 minutes):</h3>
+                    <p>Now, add the water, soaked and drained cashews, the remaining refined coconut oil, miso paste, tomato paste, salt, pepper, star anise, vanilla extract, and orange zest to the saucepan. Stir everything together until well combined. Increase the heat to medium-high and bring the mixture to a rolling boil, stirring occasionally to prevent sticking.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Blend to Silky Smoothness with Gellan Gum (2-3 minutes):</h3>
+                    <p>Carefully transfer the hot mixture to your high-speed blender. With the blender running on low, gradually add the precisely measured gellan gum. Once all the gellan gum is in, increase the blender speed to high and blend until the mixture is completely smooth and steaming hot, almost boiling in the blender itself. This ensures the gellan gum is fully hydrated and dispersed, which is key for the proper set. You'll see it transform into a velvety, uniform consistency.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Cast and Cap (Immediately):</h3>
+                    <p>Working quickly, immediately pour the hot faux gras mixture into your prepared jars or molds. Remember, it sets very fast! If you're using the optional fat cap, melt the coconut and red palm oil shortening in a small pan over low heat until just liquid. Carefully spoon a thin layer of this melted shortening over the surface of each jar of faux gras. This fat cap acts as a seal, keeping oxygen away and preserving the freshness and flavor of your faux gras.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Chill and Serve:</h3>
+                    <p>Transfer the jars to the refrigerator and chill for at least 2-4 hours, or until the faux gras is firm and the fat cap has solidified. Once chilled, your faux gras is ready to be enjoyed! Serve it with toasted baguette slices, crackers, or even a dollop of your favorite fruit jam for a delightful contrast of flavors and textures.</p>
+                </div>
+            </li>
+        </ol>
+
+        <h2>Macronutrients (per serving, estimated for 8 servings):</h2>
+        <ul class="ingredients-list">
+            <li><strong>Calories:</strong> Approximately 150-200 kcal</li>
+            <li><strong>Fat:</strong> Approximately 12-16g (mostly healthy fats from cashews and coconut oil)</li>
+            <li><strong>Carbohydrates:</strong> Approximately 8-12g</li>
+            <li><strong>Protein:</strong> Approximately 4-6g</li>
+        </ul>
+        <div class="note">
+            <strong>Note:</strong> These are approximate values and can vary based on exact ingredient quantities and brands.
+        </div>
+
+        <div class="shopping-list">
+            <h2>Shopping List:</h2>
+            <ul>
+                <li><strong>Produce:</strong>
+                    <ul>
+                        <li>Shallots (about 60g, or 1-2 medium shallots)</li>
+                        <li>Cremini Mushrooms (about 60g, or 4-5 medium mushrooms)</li>
+                        <li>Garlic (2 cloves)</li>
+                        <li>Orange (for zest)</li>
+                    </ul>
+                </li>
+                <li><strong>Pantry/Baking Aisle:</strong>
+                    <ul>
+                        <li>Raw Cashews (1 cup)</li>
+                        <li>Tomato Paste (1 tablespoon)</li>
+                        <li>White Miso Paste (1 tablespoon)</li>
+                        <li>Ground Star Anise (1/4 teaspoon)</li>
+                        <li>Vanilla Extract (1/4 teaspoon)</li>
+                        <li>Salt (1 teaspoon, plus more for adjusting)</li>
+                        <li>Black Pepper (1/2 teaspoon, plus more for adjusting)</li>
+                        <li>Gellan Gum (1/4 teaspoon – this might be in a specialty baking or health food section)</li>
+                    </ul>
+                </li>
+                <li><strong>Oils/Fats Aisle:</strong>
+                    <ul>
+                        <li>Refined Coconut Oil (2 tablespoons, plus a bit more for cooking aromatics)</li>
+                        <li>Coconut Oil and Red Palm Oil Shortening (2 tablespoons, optional, for fat cap)</li>
+                    </ul>
+                </li>
+                <li><strong>Alcohol Aisle:</strong>
+                    <ul>
+                        <li>Brandy or Cognac (1/4 cup)</li>
+                    </ul>
+                </li>
+                <li><strong>Other (if applicable):</strong>
+                    <ul>
+                        <li>Jars or molds for casting (if you don't already have them)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

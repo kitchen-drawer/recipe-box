@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilled Sesame Noodles</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+        }
+
+        .recipe-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Ensure nested ul within ol li div does not inherit ol numbering styles */
+        ol > li > div > ul {
+            list-style: disc; /* Standard bullet points */
+            padding-left: 20px; /* Indent for clarity */
+        }
+
+        /* Reset counter for nested lists if any custom counter styles were applied to the main OL */
+        ol > li > div > ul > li::before {
+            content: none !important;
+        }
+
+        .ingredients-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .ingredients-list li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #ccc;
+            padding: 5px 0;
+        }
+
+        .ingredients-list li:last-child {
+            border-bottom: none;
+        }
+
+        .ingredient-name {
+            flex-basis: 70%;
+        }
+
+        .ingredient-quantity {
+            flex-basis: 25%;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .note {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .macronutrients {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .macronutrients h3 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .macronutrients ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .macronutrients li {
+            margin-bottom: 5px;
+        }
+
+        .shopping-list h2 {
+            border-top: 2px solid #e0e0e0;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .shopping-list h3 {
+            text-align: left;
+        }
+
+        .shopping-list ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .recipe-container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            .ingredients-list li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .ingredient-quantity {
+                text-align: left;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h1>Chilled Sesame Noodles</h1>
+        <p>
+            This recipe focuses on building a deeply flavorful, emulsified sesame sauce and perfectly cooked, chilled noodles that retain their texture. It’s a creamy, velvety, and flavorful experience with a kick from chili oil and raw scallions, and a deep, comforting toasted sesame flavor. Plan to start prepping and cooking about 30-45 minutes before you plan to serve.
+        </p>
+
+        <h2>Ingredients</h2>
+
+        <div class="ingredients-list">
+            <h3>For the Sauce:</h3>
+            <ul>
+                <li><span class="ingredient-name">100% sesame paste</span> <span class="ingredient-quantity">1/2 cup (about 120g)</span></li>
+                <li><span class="ingredient-name">Sesame oil</span> <span class="ingredient-quantity">2 tablespoons</span></li>
+                <li><span class="ingredient-name">Fermented tofu (furu), mashed</span> <span class="ingredient-quantity">1 small cube (about 10g)</span></li>
+                <li><span class="ingredient-name">Light soy sauce</span> <span class="ingredient-quantity">2 tablespoons</span></li>
+                <li><span class="ingredient-name">Dark soy sauce (for color)</span> <span class="ingredient-quantity">1 teaspoon</span></li>
+                <li><span class="ingredient-name">Salt</span> <span class="ingredient-quantity">1/2 teaspoon, or to taste</span></li>
+                <li><span class="ingredient-name">Granulated sugar</span> <span class="ingredient-quantity">1 tablespoon, or to taste</span></li>
+                <li><span class="ingredient-name">Aged Chinese black vinegar</span> <span class="ingredient-quantity">1 tablespoon</span></li>
+                <li><span class="ingredient-name">Sichuan peppercorn oil</span> <span class="ingredient-quantity">1 teaspoon, or to taste</span></li>
+                <li><span class="ingredient-name">Kewpie mayonnaise</span> <span class="ingredient-quantity">2 tablespoons</span></li>
+                <li><span class="ingredient-name">Cold water</span> <span class="ingredient-quantity">1/2 cup, or as needed</span></li>
+            </ul>
+
+            <h3>For the Noodles:</h3>
+            <ul>
+                <li><span class="ingredient-name">Flour noodles (such as fresh ramen or dried wheat noodles)</span> <span class="ingredient-quantity">1 pound</span></li>
+                <li><span class="ingredient-name">Vegetable oil</span> <span class="ingredient-quantity">1 tablespoon</span></li>
+            </ul>
+
+            <h3>For the Garnish:</h3>
+            <ul>
+                <li><span class="ingredient-name">Scallions, thinly sliced into ribbons</span> <span class="ingredient-quantity">3-4</span></li>
+                <li><span class="ingredient-name">Chili oil</span> <span class="ingredient-quantity">2-3 tablespoons, or to taste</span></li>
+                <li><span class="ingredient-name">Toasted sesame seeds, freshly ground</span> <span class="ingredient-quantity">1 tablespoon</span></li>
+            </ul>
+        </div>
+
+        <h2>Equipment</h2>
+        <ul>
+            <li>Large mixing bowl</li>
+            <li>Whisk</li>
+            <li>Large pot for boiling noodles</li>
+            <li>Fine-mesh sieve or colander</li>
+            <li>Baking sheet or large plate</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>
+                <div>
+                    <h3>Prepare your mise en place:</h3>
+                    <p>
+                        Before you even think about cooking, let's get everything ready. Slice your scallions into beautiful ribbons. If you have a mortar and pestle, give those toasted sesame seeds a quick grind; this really unlocks their flavor. Measure out all your sauce ingredients. This little bit of foresight will make the whole process flow like a dream.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Craft the Sesame Sauce:</h3>
+                    <p>
+                        In a large mixing bowl, combine the sesame paste, sesame oil, mashed fermented tofu, light soy sauce, dark soy sauce, salt, sugar, aged Chinese black vinegar, Sichuan peppercorn oil, and Kewpie mayonnaise. Now, here's where the magic happens: whisk everything together vigorously. You'll notice it's quite thick at first. Gradually, and I mean <em>gradually</em>, add the cold water, whisking continuously. You're looking for a smooth, velvety emulsion, like a luxurious, pourable cream. Keep whisking until it's perfectly smooth and has that beautiful, rich consistency. Taste it! This is your moment to adjust for salt, sweetness, or a little more tang from the vinegar. Remember, you're the chef here, and your palate is the ultimate guide.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Cook the Noodles with Finesse:</h3>
+                    <p>
+                        Bring a large pot of water to a rolling boil. Before dropping your noodles in, gently separate them to prevent clumping. Cook them according to the package instructions until they are perfectly al dente—tender but with a slight bite. Once cooked, drain them thoroughly. Now, here's a crucial tip from Lucas Sin himself: skip the ice bath! While it seems counterintuitive for chilled noodles, an ice bath can actually strip away their texture and flavor. Instead, toss the hot, drained noodles with a tablespoon of vegetable oil. This coats them lightly, preventing them from sticking together as they cool and helping them retain their lovely texture. Spread them out on a baking sheet or a large plate to cool down quickly to room temperature.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Assemble and Garnish:</h3>
+                    <p>
+                        Once your noodles are cool, transfer them to a serving bowl. Pour a generous amount of that glorious sesame sauce over the noodles. Toss gently to coat every strand evenly. Now for the garnishes: scatter those beautiful scallion ribbons over the top, drizzle with your favorite chili oil for a touch of heat, and finish with a sprinkle of your freshly ground toasted sesame seeds.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Serve and Savor:</h3>
+                    <p>
+                        Plate your chilled sesame noodles with pride. Take a moment to admire the creamy coating, the vibrant green of the scallions, and the rich red of the chili oil. This dish is meant to be enjoyed immediately, allowing you to experience the full spectrum of its creamy, velvety texture, the delightful heat from the chili oil, the fresh bite of raw scallions, and that deep, comforting toasted sesame flavor.
+                    </p>
+                </div>
+            </li>
+        </ol>
+
+        <div class="macronutrients">
+            <h3>Macronutrients (Estimated per serving, based on general ingredients):</h3>
+            <ul>
+                <li><strong>Calories:</strong> Approximately 550-650 kcal</li>
+                <li><strong>Protein:</strong> Approximately 15-20g</li>
+                <li><strong>Fat:</strong> Approximately 35-45g (primarily from sesame paste, sesame oil, and mayonnaise)</li>
+                <li><strong>Carbohydrates:</strong> Approximately 50-60g (primarily from noodles)</li>
+            </ul>
+        </div>
+
+        <div class="shopping-list">
+            <h2>Shopping List: Chilled Sesame Noodles</h2>
+            <h3>Produce Section:</h3>
+            <ul>
+                <li>Scallions: 1 bunch (3-4 scallions)</li>
+            </ul>
+
+            <h3>Asian/International Foods Aisle:</h3>
+            <ul>
+                <li>100% Sesame paste: 1 jar (you'll need about 1/2 cup)</li>
+                <li>Sesame oil: 1 bottle (you'll need about 2 tablespoons)</li>
+                <li>Fermented tofu (furu): 1 small jar or package (you'll need 1 small cube)</li>
+                <li>Light soy sauce: 1 bottle (you'll need about 2 tablespoons)</li>
+                <li>Dark soy sauce: 1 bottle (you'll need about 1 teaspoon)</li>
+                <li>Aged Chinese black vinegar: 1 bottle (you'll need about 1 tablespoon)</li>
+                <li>Sichuan peppercorn oil: 1 bottle (you'll need about 1 teaspoon)</li>
+                <li>Kewpie mayonnaise: 1 bottle (you'll need about 2 tablespoons)</li>
+                <li>Flour noodles: 1 package (1 pound, such as fresh ramen or dried wheat noodles)</li>
+                <li>Chili oil: 1 bottle (you'll need about 2-3 tablespoons)</li>
+                <li>Toasted sesame seeds: 1 small bag (you'll need about 1 tablespoon)</li>
+            </ul>
+
+            <h3>Pantry/Baking Aisle:</h3>
+            <ul>
+                <li>Salt: 1 container (you'll need about 1/2 teaspoon)</li>
+                <li>Granulated sugar: 1 bag (you'll need about 1 tablespoon)</li>
+                <li>Vegetable oil: 1 bottle (you'll need about 1 tablespoon)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

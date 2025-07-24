@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insalata Frutti di Mare</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50; /* Dark Blue */
+            --secondary-color: #3498db; /* Bright Blue */
+            --accent-color: #e74c3c; /* Red */
+            --text-color: #333;
+            --light-bg: #f8f8f8;
+            --white: #ffffff;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            background-color: var(--light-bg);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 1.5em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+        }
+
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        ol {
+            counter-reset: step-counter;
+            padding-left: 0;
+            margin-bottom: 1.5em;
+        }
+
+        ol li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            counter-increment: step-counter;
+        }
+
+        ol li:before {
+            content: counter(step-counter) ".";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.1em;
+        }
+
+        .note {
+            background-color: #f0f8ff; /* Light blue */
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: var(--secondary-color);
+        }
+
+        .shopping-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .shopping-list ul li:before {
+            content: none;
+        }
+
+        .shopping-list h3 {
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insalata Frutti di Mare</h1>
+        <p style="text-align: center; font-style: italic; color: #666;">CHILLED SEAFOOD WITH SALSA VERDE</p>
+
+        <p>Ciao! It sounds like you're aiming to create a beautiful and bright seafood salad, a true celebration of fresh flavors. This Insalata Frutti di Mare with Salsa Verde is a fantastic choice for a light and elegant summer starter. What you'll achieve is a harmonious blend of tender, sweet seafood and crisp celery, all brought together by a vibrant, piquant herb and caper sauce. The key here is precise cooking of each seafood element to ensure it's perfectly tender, never rubbery, and the fresh, zesty salsa verde truly elevates the entire dish.</p>
+
+        <p>Plan to start your prep about 2-3 hours before you want to serve, especially since the court bouillon needs to simmer and cool, and the seafood needs time to chill. You can make the salsa verde and court bouillon a day in advance to streamline things.</p>
+
+        <h2>Yields: 4 servings</h2>
+
+        <h2>Ingredients:</h2>
+
+        <h3>For the Court Bouillon:</h3>
+        <ul>
+            <li>10 cups (2½ liters) cold water</li>
+            <li>2½ cups (600 ml) dry white wine</li>
+            <li>½ fennel bulb, or fennel trimmings</li>
+            <li>3 celery stalks, cut in half</li>
+            <li>2 fresh or dried bay leaves</li>
+            <li>2 tablespoons (20 grams) salt</li>
+        </ul>
+
+        <h3>For the Seafood:</h3>
+        <ul>
+            <li>½ pound (225 grams) calamari or cuttlefish bodies and tentacles, cleaned and prepared (see notes below)</li>
+            <li>8 jumbo shrimp, shells on, deveined (see notes below)</li>
+            <li>1½ pounds (680 grams) mussels, cleaned and debearded (see notes below)</li>
+            <li>Extra-virgin olive oil, for tossing</li>
+            <li>Salt, to taste</li>
+            <li>3 celery stalks, thinly sliced</li>
+            <li>Pale celery leaves, from the celery stalks</li>
+        </ul>
+
+        <h3>For the Salsa Verde:</h3>
+        <ul>
+            <li>2 tablespoons (30 grams) capers, rinsed and chopped</li>
+            <li>1 garlic clove, finely grated</li>
+            <li>1 lemon</li>
+            <li>¼ teaspoon (1 gram) salt, plus more to taste</li>
+            <li>¼ cup (60 ml) extra-virgin olive oil, plus more if needed</li>
+            <li>½ cup loosely packed fresh flat-leaf parsley leaves (a handful)</li>
+            <li>½ cup loosely packed fresh basil leaves (a handful)</li>
+        </ul>
+
+        <div class="note">
+            <h3>Technique & Finesse Notes:</h3>
+            <ul>
+                <li><strong>Tasting is paramount!</strong> Remember what I always say: recipes are guidelines, but your palate is the ultimate judge. Taste your court bouillon, taste your salsa verde, and most importantly, taste the seasoned seafood. You'll learn to adjust instinctively.</li>
+                <li><strong>Don't rush the chill:</strong> Rapid chilling in the ice bath is crucial for stopping the cooking process and ensuring the seafood remains tender and vibrant.</li>
+                <li><strong>Gentle handling:</strong> Seafood, especially when cooked, is delicate. Use a spider or slotted spoon to carefully transfer it, and be gentle when tossing with oil and salt.</li>
+                <li><strong>Freshness matters:</strong> This dish sings with truly fresh ingredients. Source the best quality seafood and use a good, robust extra-virgin olive oil for both the seafood and the salsa verde.</li>
+            </ul>
+        </div>
+
+        <h2>Step-by-Step Method:</h2>
+
+        <ol>
+            <li>
+                <h3>Make the Court Bouillon (Can be done up to 1 week in advance):</h3>
+                <ul>
+                    <li>In a large pot, combine the cold water, white wine, ½ fennel bulb (or trimmings), 3 celery stalks (halved), and bay leaves.</li>
+                    <li>Bring the mixture to a rolling boil over high heat.</li>
+                    <li>Once boiling, reduce the heat to medium-low, add the 2 tablespoons of salt, and stir to dissolve. Allow it to gently simmer, uncovered, for 20 minutes. You'll notice the aromas of the wine and vegetables melding, creating a subtle, fragrant base.</li>
+                    <li>Remove from the heat and let it cool slightly.</li>
+                    <li>Strain the court bouillon through a fine-mesh sieve, discarding the solids. You want a clear, clean liquid. You can use it right away, or let it cool completely and then refrigerate for up to a week.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Prepare the Seafood for Poaching:</h3>
+                <ul>
+                    <li><strong>Calamari/Cuttlefish:</strong> If you have whole calamari or cuttlefish, you'll want to get them ready. Slice the bodies lengthwise to open them flat, like a book. With the dull side of your knife, scrape off any white or clear membrane. Then, slice the bodies in half and score a crosshatch pattern on each half – this helps them cook evenly and look lovely.</li>
+                    <li><strong>Shrimp:</strong> To devein the shrimp, use kitchen scissors or a small paring knife to cut along the back of the shell, following the curve of the shrimp. Make a shallow incision along its length. If you see a dark "vein" (this is the digestive tract), gently pull it out. Leave the shells on for poaching; they add flavor and protect the delicate flesh.</li>
+                    <li><strong>Mussels:</strong> Place your mussels in a colander and give them a good rinse under cold water. Check for any fibrous bits coming from inside the shell – these are called "beards." Pinch them firmly between your fingers and pull down to remove. Give the mussels a good scrub with a firm-bristled brush, then rinse again. You can soak them in a bowl of ice water for up to 30 minutes just before cooking; this encourages them to expel any sand. Drain them well before cooking.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Poach the Seafood:</h3>
+                <ul>
+                    <li>Have a large bowl filled generously with ice water ready. This is your immediate chilling station.</li>
+                    <li>Bring the strained court bouillon to a boil in a large pot.</li>
+                    <li><strong>Calamari/Cuttlefish:</strong> Start with the calamari tentacles (or cuttlefish, if using). Submerge them in the boiling court bouillon and cook until they are opaque and barely firm. For calamari, this will be incredibly fast—about 30 to 45 seconds. Lift them out immediately with a spider or slotted spoon and plunge them into the ice water to chill. Next, cook the calamari bodies for about 30 seconds, until opaque and just firm. If you're using cuttlefish, they'll need more time, typically 15 to 25 minutes. Transfer them immediately to the ice water to cool, then drain all the calamari/cuttlefish in a colander. Add more ice to your bowl as needed to keep it very cold.</li>
+                    <li><strong>Shrimp:</strong> Poach the shrimp in the hot court bouillon until their shells turn pink and their flesh is opaque, usually 2 to 3 minutes. Lift them out with a spider and chill in the ice bath for a few minutes, then transfer them to the colander with the calamari.</li>
+                    <li><strong>Mussels:</strong> Pour off most of the court bouillon from the pot, leaving about 1 inch (2.5 cm) in the bottom. Bring this back to a boil over high heat. Add the cleaned mussels, cover the pot tightly, and steam for about 5 minutes, or until they open. As mussels open, lift them out of the pot. Recover the pot and continue steaming any remaining mussels. Discard any mussels that haven't opened after another 5 minutes of steaming.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Assemble the Seafood:</h3>
+                <ul>
+                    <li>Once the seafood is chilled and drained, you'll prepare it for the salad.</li>
+                    <li>Slice the calamari into thin strips.</li>
+                    <li>Peel the poached shrimp. Lay each shrimp flat and use a sharp knife to split it in half lengthwise.</li>
+                    <li>Shuck the mussels, discarding all the shells.</li>
+                    <li>Place all the prepared seafood in a mixing bowl. Drizzle with enough extra-virgin olive oil to lightly coat, then season with a pinch of salt. Toss gently to combine.</li>
+                    <li>Thinly slice the 3 remaining celery stalks and add them to the bowl, along with a scattering of the pale, delicate celery leaves. Toss again.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Make the Salsa Verde (Can be done up to 1 day in advance):</h3>
+                <ul>
+                    <li>In a small bowl, combine the rinsed and chopped capers with the finely grated garlic.</li>
+                    <li>Halve the lemon. Squeeze the juice of half the lemon into the bowl, add about ¼ teaspoon of salt, and pour in ¼ cup of extra-virgin olive oil.</li>
+                    <li>Finely chop the fresh parsley leaves and add them to the bowl.</li>
+                    <li>For the basil, stack the leaves neatly, roll them up tightly, and then slice them thinly to create fine shreds. Coarsely chop these shreds and add to the bowl.</li>
+                    <li>Stir everything together until well combined. Taste the salsa verde. This is your moment to adjust for balance! Does it need more salt? A little more brightness from lemon juice? Don't be shy about adjusting.</li>
+                    <li>If you're not using it right away, pour a thin layer of extra-virgin olive oil over the surface of the salsa verde to prevent discoloration. Cover and refrigerate for up to 1 day.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>To Serve:</h3>
+                <ul>
+                    <li>Arrange the dressed seafood and sliced celery in a single layer on a platter or individual plates.</li>
+                    <li>Spoon the vibrant salsa verde generously over the top of the seafood.</li>
+                    <li>Serve immediately and enjoy the fresh, bright flavors!</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Estimated Macronutrients Per Serving (Approximate):</h2>
+        <ul>
+            <li><strong>Calories:</strong> 350-450 kcal</li>
+            <li><strong>Protein:</strong> 30-40g</li>
+            <li><strong>Fats:</strong> 20-30g</li>
+            <li><strong>Carbohydrates:</strong> 10-15g</li>
+            <li><strong>Fiber:</strong> 2-4g</li>
+        </ul>
+
+        <div class="shopping-list">
+            <h2>Insalata Frutti di Mare Shopping List</h2>
+            <h3>Produce:</h3>
+            <ul>
+                <li>Fennel: 1 small bulb (or trimmings if you have them from another recipe)</li>
+                <li>Celery: 6-7 stalks (you'll need 3 for the court bouillon and 3-4 for the salad)</li>
+                <li>Lemons: 1-2 (for the salsa verde)</li>
+                <li>Fresh Flat-Leaf Parsley: 1 bunch</li>
+                <li>Fresh Basil: 1 bunch</li>
+                <li>Garlic: 1 head (you'll need 1 clove)</li>
+                <li>Ice: 1-2 bags (or make sure your ice maker is working overtime!)</li>
+            </ul>
+
+            <h3>Seafood:</h3>
+            <ul>
+                <li>Calamari or Cuttlefish: ½ pound (225 grams) bodies and tentacles, preferably cleaned</li>
+                <li>Jumbo Shrimp: 8 count, shells on</li>
+                <li>Mussels: 1½ pounds (680 grams)</li>
+            </ul>
+
+            <h3>Pantry/Oils & Vinegars:</h3>
+            <ul>
+                <li>Dry White Wine: 1 bottle (you'll need 2½ cups/600 ml for the court bouillon, so a standard 750ml bottle is perfect)</li>
+                <li>Extra-Virgin Olive Oil: 1 large bottle (choose your best quality, as it's a star here!)</li>
+                <li>Capers: 1 small jar (2 tablespoons needed)</li>
+                <li>Salt: Kosher or sea salt</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

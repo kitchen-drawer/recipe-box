@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti with Crab and Sea Urchin Roe</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fdfaf5;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            color: #5a2d05;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.3em;
+            margin-top: 1.5em;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #7b4f2c;
+        }
+        /* Styling for the main ingredients list (unordered) */
+        ul {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+        }
+        ul li::before {
+            content: '• '; /* Add custom bullet */
+            color: #8b5e3c;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Styling for the main instructions list (ordered) */
+        ol {
+            counter-reset: my-custom-counter;
+            list-style: none; /* Remove default numbering */
+            padding-left: 0; /* Remove default padding */
+        }
+        ol li {
+            counter-increment: my-custom-counter;
+            margin-bottom: 1em;
+            padding-left: 2.5em; /* Space for the custom number */
+            position: relative;
+        }
+        ol li::before {
+            content: counter(my-custom-counter) ". ";
+            font-weight: bold;
+            color: #8b5e3c;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Styles for nested lists within instruction steps */
+        ol li div ul {
+            list-style: disc; /* Standard bullet points for nested unordered lists */
+            padding-left: 1.5em; /* Indent nested lists */
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        ol li div ul li::before {
+            content: none; /* Remove custom bullet from nested li::before */
+        }
+        /* Ensure nested h3 doesn't inherit ol li custom numbering */
+        ol li div h3 {
+            display: inline; /* Keep heading text flow */
+        }
+
+
+        .note, .tips {
+            background-color: #fff8eb;
+            border-left: 4px solid #d4a06b;
+            padding: 1em 1.5em;
+            margin: 1.5em 0;
+            border-radius: 4px;
+        }
+        .macro-info {
+            font-style: italic;
+            color: #666;
+            margin-top: 1em;
+        }
+        .shopping-list h3 {
+            margin-top: 2em;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .shopping-list ul {
+            columns: 2; /* For a two-column layout on wider screens */
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            list-style: disc; /* Ensure shopping list uses standard bullets */
+            padding-left: 1.5em;
+        }
+        .shopping-list ul li::before {
+            content: none; /* Remove custom bullet for shopping list */
+        }
+
+        @media (max-width: 600px) {
+            .shopping-list ul {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Spaghetti with Crab and Sea Urchin Roe</h1>
+
+    <p>Hello there! I'd be delighted to help you with this recipe.</p>
+
+    <p>We're going to create a truly luxurious dish today: <strong>Spaghetti with Crab and Sea Urchin Roe</strong>. This isn't your everyday pasta; it's a sophisticated take on classic seafood pasta, elevated by the rich, briny notes of sea urchin roe and a scattering of crispy breadcrumbs. You'll find the process quite straightforward, allowing the exquisite ingredients to shine. If you're aiming for this as a main course for dinner, I'd suggest starting your prep around 5:30 PM, aiming to serve by 6:30 PM.</p>
+
+    <h2>Yields</h2>
+    <p>Serves 6 as an appetizer or 4 as a main course.</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>1 pound spaghetti</li>
+        <li>¼ cup extra virgin olive oil, plus more for serving</li>
+        <li>4 scallions (white and light green parts only), thinly sliced</li>
+        <li>3 large garlic cloves, thinly sliced</li>
+        <li>¼ teaspoon red pepper flakes</li>
+        <li>1 pound plum tomatoes (3 or 4 tomatoes), cut into ½-inch dice</li>
+        <li>Kosher salt</li>
+        <li>½ cup dry white wine</li>
+        <li>10 ounces (1¾ cups) fresh crabmeat, preferably jumbo lump, picked for shells and cartilage</li>
+        <li>4 ounces sea urchin roe</li>
+        <li>¼ cup Seasoned Toasted Bread Crumbs</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+        <li>
+            <div>
+                <h3>Prep Your Ingredients (Mise en Place):</h3>
+                <ul>
+                    <li>Thinly slice your 4 scallions, using only the white and light green parts.</li>
+                    <li>Thinly slice the 3 large garlic cloves.</li>
+                    <li>Dice your plum tomatoes into ½-inch pieces.</li>
+                    <li>Ensure your fresh crabmeat is meticulously picked clean of any shells or cartilage. Take your time here; there’s nothing worse than biting into a piece of shell!</li>
+                    <li>Have your sea urchin roe ready. This delicate ingredient will be added at the very end.</li>
+                    <li>Measure out your bread crumbs.</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Cook the Pasta:</h3> Fill a large pot two-thirds full with water. Season it liberally with salt—it should taste "as seasoned as you would like the pasta to be"—and bring it to a rolling boil over high heat. Add the spaghetti and cook, stirring occasionally, until it's al dente, which typically takes about 8 minutes. Before draining, use a heatproof liquid measuring cup to scoop out and reserve about ½ cup of the starchy cooking water. This liquid is gold for adjusting the sauce's consistency later. Drain the pasta well.
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Start the Sauce - Aromatics and Tomatoes:</h3> While your pasta is cooking, heat a large skillet over medium-high heat. Add ¼ cup of olive oil. Once the oil shimmers, add the sliced scallions, garlic, and red pepper flakes. Cook, stirring frequently with a wooden spoon, until the scallions are lightly golden brown, which should take about 1 minute. You'll notice the fragrant aroma of garlic and scallions filling your kitchen—a truly lovely scent!
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Develop the Tomato Base:</h3> Stir in your diced plum tomatoes and season with salt. Continue to cook, tossing and stirring frequently, encouraging the tomatoes to break down. This process will take 7 to 8 minutes. You'll see the tomatoes soften and release their juices, creating a beautiful, vibrant base for your sauce.
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Deglaze with Wine:</h3> Pour in the ½ cup of dry white wine. Bring the sauce to a simmer and let it cook gently until the liquid has slightly reduced, about 6 to 7 minutes. The alcohol will cook off, leaving behind a concentrated, bright flavor.
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Add the Crab and Urchin Roe:</h3> Reduce the heat to low. Now for the stars of the show! Stir in the fresh crabmeat and the sea urchin roe. Gently fold these delicate ingredients into the warm sauce. You'll see the roe begin to melt into the sauce, imparting its unique umami and subtly briny essence. Taste and adjust the salt as needed. Remember, tasting as you go is key to achieving perfect balance.
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Combine Pasta and Sauce:</h3> Add the cooked spaghetti directly to the skillet with the sauce and toss until everything is well coated. If the sauce seems a little too thick or sticky, add some of the reserved pasta water, a tablespoon at a time, until the sauce coats the pasta beautifully. The starch in the pasta water will help emulsify the sauce and create a luscious texture.
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3>Serve and Finish:</h3> Divide the spaghetti among plates or wide, shallow bowls. Drizzle each serving with a bit of extra virgin olive oil for a final touch of richness. Finish with a generous scattering of the seasoned toasted bread crumbs. The crunch of the breadcrumbs provides a wonderful textural contrast to the silky pasta and tender crab.
+            </div>
+        </li>
+    </ol>
+
+    <h2>Macronutrient Estimates Per Serving (Approximate, for 4 servings)</h2>
+    <div class="macro-info">
+        <ul>
+            <li><strong>Calories:</strong> 650-750 kcal</li>
+            <li><strong>Protein:</strong> 30-35g</li>
+            <li><strong>Fats:</strong> 25-30g (with a good portion being healthy monounsaturated fats from olive oil)</li>
+            <li><strong>Carbohydrates:</strong> 70-80g (primarily from pasta and vegetables)</li>
+        </ul>
+    </div>
+
+    <div class="shopping-list">
+        <h2>Shopping List</h2>
+
+        <h3>Produce</h3>
+        <ul>
+            <li>1 pound plum tomatoes (3-4 medium)</li>
+            <li>1 bunch scallions (approx. 4 large)</li>
+            <li>1 head garlic (for 3 large cloves)</li>
+        </ul>
+
+        <h3>Seafood</h3>
+        <ul>
+            <li>10 ounces fresh crabmeat (jumbo lump if available)</li>
+            <li>4 ounces sea urchin roe</li>
+        </ul>
+
+        <h3>Pantry</h3>
+        <ul>
+            <li>1 pound spaghetti</li>
+            <li>1 bottle extra virgin olive oil</li>
+            <li>1 bottle dry white wine (e.g., Sauvignon Blanc, Pinot Grigio)</li>
+            <li>1 small jar red pepper flakes</li>
+            <li>1 box kosher salt</li>
+            <li>1 bag seasoned toasted bread crumbs</li>
+        </ul>
+    </div>
+</body>
+</html>
